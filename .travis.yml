@@ -16,3 +16,6 @@ before_install:
   - git clone https://github.com/iykequame/scripts.git zac6ix/RomBuild/scripts
   - cd $PWD/zac6ix/RomBuild/scripts/setup
   - bash ubuntu1404.sh
+
+deploy:
+  api_key: "$ZAC6IX_APK"
