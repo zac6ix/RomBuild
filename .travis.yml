@@ -7,7 +7,7 @@ dist: trusty
 
 android:
   components:
-  - platform-tools
+  #- platform-tools
   - tools
 
 sudo: required
@@ -16,10 +16,10 @@ before_install:
   - git clone https://github.com/iykequame/scripts.git zac6ix/RomBuild/scripts
   - cd $PWD/zac6ix/RomBuild/scripts/setup
   - bash ubuntu1404.sh
-  - mkdir ~/bin
-  - PATH=~/bin:$PATH
+  #- mkdir ~/bin
+  - PATH=~/home/travis/bin:$PATH
   - curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-  - chmod a+x ~/bin/repo
+  - chmod a+x ~/home/travis/bin/repo
   - mkdir ~/RR
   - cd ~/RR
   - repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
