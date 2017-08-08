@@ -18,8 +18,8 @@ before_install:
   - bash ubuntu1404.sh
   #- mkdir ~/bin
   - PATH=~/home/travis/bin:$PATH
-  - curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/home/travis/bin/repo
-  - chmod a+x ~/home/travis/bin/repo
+  #- curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/home/travis/bin/repo
+  #- chmod a+x ~/home/travis/bin/repo
   - mkdir ~/RR
   - cd ~/RR
   - repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
