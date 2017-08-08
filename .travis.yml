@@ -33,5 +33,5 @@ before_install:
   - lunch lineage_Camon_C7-userdebug
   - brunch Camon_C7
 
-#deploy:
-  #api_key: "$ZAC6IX_APK"
+deploy:
+  api_key: "$ZAC6IX_APK"
