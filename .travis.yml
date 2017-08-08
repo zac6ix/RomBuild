@@ -27,11 +27,11 @@ liblzma* w3m android-tools-adb maven ncftp figlet imagemagick
   - mkdir ~/RR
   - cd ~/RR
   - echo "Installing repo";
-	- sudo install utils/repo /usr/local/bin/
-	- echo "Installing ccache 3.3.4, please make sure your ROM includes the commit to use host ccache"
-	- sudo install utils/ccache /usr/local/bin/
-	- echo "Installing ninja 1.7.2, please make sure your ROM includes the commit to use host ninja"
-	- sudo install utils/ninja /usr/local/bin/
+  - sudo install utils/repo /usr/local/bin/
+  - echo "Installing ccache 3.3.4, please make sure your ROM includes the commit to use host ccache"
+  - sudo install utils/ccache /usr/local/bin/
+  - echo "Installing ninja 1.7.2, please make sure your ROM includes the commit to use host ninja"
+  - sudo install utils/ninja /usr/local/bin/
   - repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b nougat
   - repo sync -f --force-sync --no-clone-bundle
   - echo "export USE_CCACHE=1" >> ~/.bashrc
